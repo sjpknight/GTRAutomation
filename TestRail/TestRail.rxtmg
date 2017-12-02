@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="7.2">
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="TestRail"
+      id="77391a25-03ce-49fe-ac33-58abf351aa3e"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="TestRail"
+      id="77391a25-03ce-49fe-ac33-58abf351aa3e"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>
