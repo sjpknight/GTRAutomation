@@ -289,7 +289,7 @@ NLRQAm4e/wCRo3D3/I0tFACbh7/kaNw9/wAjS0UAJuHv+Ro3D3/I0tFACbh7/kaNw9/yNLRQAm4e
 		action="AttributeEqual"
 		duration="100ms"
 		enabled="True"
-		optional="False"
+		optional="True"
 		searchpropertyid="56690f24-9519-4c83-a17b-15235672b5d5">
 			<comment>
 			</comment>

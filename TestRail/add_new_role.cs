@@ -24,29 +24,29 @@ namespace TestRail
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The create_test_run recording.
+    ///The add_new_role recording.
     /// </summary>
-    [TestModule("ffd9da09-8fc5-468d-b918-433beedd73dd", ModuleType.Recording, 1)]
-    public partial class Create_test_run : ITestModule
+    [TestModule("bc78495f-be32-4d8c-912b-62a00825436f", ModuleType.Recording, 1)]
+    public partial class add_new_role : ITestModule
     {
         /// <summary>
         /// Holds an instance of the TestRailRepository repository.
         /// </summary>
         public static TestRailRepository repo = TestRailRepository.Instance;
 
-        static Create_test_run instance = new Create_test_run();
+        static add_new_role instance = new add_new_role();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Create_test_run()
+        public add_new_role()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Create_test_run Instance
+        public static add_new_role Instance
         {
             get { return instance; }
         }
@@ -79,35 +79,39 @@ namespace TestRail
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LoginTestRail.TestRail1' at 22;4.", repo.LoginTestRail.TestRail1Info, new RecordItemIndex(0));
-            repo.LoginTestRail.TestRail1.Click("22;4");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LoginTestRail.Administration' at 35;18.", repo.LoginTestRail.AdministrationInfo, new RecordItemIndex(0));
+            repo.LoginTestRail.Administration.Click("35;18");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LoginTestRail.Sidebar1.TestRuns' at 23;9.", repo.LoginTestRail.Sidebar1.TestRunsInfo, new RecordItemIndex(1));
-            repo.LoginTestRail.Sidebar1.TestRuns.Click("23;9");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LoginTestRail.ViewUsersRoles' at 75;6.", repo.LoginTestRail.ViewUsersRolesInfo, new RecordItemIndex(1));
+            repo.LoginTestRail.ViewUsersRoles.Click("75;6");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LoginTestRail.Sidebar1.AddTestRun' at 11;6.", repo.LoginTestRail.Sidebar1.AddTestRunInfo, new RecordItemIndex(2));
-            repo.LoginTestRail.Sidebar1.AddTestRun.Click("11;6");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LoginTestRail.ATagAddRole' at 35;22.", repo.LoginTestRail.ATagAddRoleInfo, new RecordItemIndex(2));
+            repo.LoginTestRail.ATagAddRole.Click("35;22");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LoginTestRail.ButtonTagAddTestRun' at 66;11.", repo.LoginTestRail.ButtonTagAddTestRunInfo, new RecordItemIndex(3));
-            repo.LoginTestRail.ButtonTagAddTestRun.Click("66;11");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LoginTestRail.Name' at 104;15.", repo.LoginTestRail.NameInfo, new RecordItemIndex(3));
+            repo.LoginTestRail.Name.Click("104;15");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Successfully added the new test run.') on item 'LoginTestRail.SuccessfullyAddedTheNewTestCase'.", repo.LoginTestRail.SuccessfullyAddedTheNewTestCaseInfo, new RecordItemIndex(4));
-            Validate.Attribute(repo.LoginTestRail.SuccessfullyAddedTheNewTestCaseInfo, "InnerText", "Successfully added the new test run.");
-            Delay.Milliseconds(100);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'testrole'.", new RecordItemIndex(4));
+            Keyboard.Press("testrole");
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LoginTestRail.ATagReturnToDashboard' at 104;3.", repo.LoginTestRail.ATagReturnToDashboardInfo, new RecordItemIndex(5));
-            repo.LoginTestRail.ATagReturnToDashboard.Click("104;3");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LoginTestRail.ButtonTagAddRole' at 31;13.", repo.LoginTestRail.ButtonTagAddRoleInfo, new RecordItemIndex(5));
+            repo.LoginTestRail.ButtonTagAddRole.Click("31;13");
             Delay.Milliseconds(200);
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAll Projects\t\t\t\t\t') on item 'LoginTestRail.DivTagAllPr'.", repo.LoginTestRail.DivTagAllPrInfo, new RecordItemIndex(6));
-                Validate.Attribute(repo.LoginTestRail.DivTagAllPrInfo, "InnerText", "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAll Projects\t\t\t\t\t", Validate.DefaultMessage, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Successfully added the new role.') on item 'LoginTestRail.SuccessfullyAddedTheNewTestCase'.", repo.LoginTestRail.SuccessfullyAddedTheNewTestCaseInfo, new RecordItemIndex(6));
+                Validate.Attribute(repo.LoginTestRail.SuccessfullyAddedTheNewTestCaseInfo, "InnerText", "Successfully added the new role.", Validate.DefaultMessage, false);
                 Delay.Milliseconds(100);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(6)); }
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LoginTestRail.Dashboard' at 57;15.", repo.LoginTestRail.DashboardInfo, new RecordItemIndex(7));
+            repo.LoginTestRail.Dashboard.Click("57;15");
+            Delay.Milliseconds(200);
             
         }
 

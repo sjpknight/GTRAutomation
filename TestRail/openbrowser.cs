@@ -83,10 +83,6 @@ namespace TestRail
             Host.Current.OpenBrowser("http://localhost:8080/testrail/index.php", "chrome", "", false, false, false, true, false);
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='\n\t\tLog in\t') on item 'LoginTestRail.ButtonTagLogIn'.", repo.LoginTestRail.ButtonTagLogInInfo, new RecordItemIndex(1));
-            Validate.Attribute(repo.LoginTestRail.ButtonTagLogInInfo, "InnerText", "\n\t\tLog in\t");
-            Delay.Milliseconds(100);
-            
         }
 
 #region Image Feature Data

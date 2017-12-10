@@ -419,7 +419,7 @@ KKKKACiiigAooooAKKKKACiiigAooooA/9k=
 		action="AttributeEqual"
 		duration="100ms"
 		enabled="True"
-		optional="False"
+		optional="True"
 		searchpropertyid="d4015ba7-e0d7-4a49-abc5-a3f0466f7ce9">
 			<comment>
 			</comment>

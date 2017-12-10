@@ -1124,7 +1124,7 @@ r6U6ii4WG+WvpR5a+lOoouFhvlr6UeWvpTqKLhYb5a+lFOoouFj/2Q==
 		action="AttributeEqual"
 		duration="100ms"
 		enabled="True"
-		optional="False"
+		optional="True"
 		searchpropertyid="ed575875-9ca2-4055-b34e-654602d720cf">
 			<comment>
 			</comment>

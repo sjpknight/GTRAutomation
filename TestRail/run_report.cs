@@ -105,9 +105,11 @@ namespace TestRail
             repo.LoginTestRail.Submit.Click("60;12");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Successfully added the new report/scheduled report.') on item 'LoginTestRail.SuccessfullyAddedTheNewTestCase'.", repo.LoginTestRail.SuccessfullyAddedTheNewTestCaseInfo, new RecordItemIndex(6));
-            Validate.Attribute(repo.LoginTestRail.SuccessfullyAddedTheNewTestCaseInfo, "InnerText", "Successfully added the new report/scheduled report.");
-            Delay.Milliseconds(100);
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Successfully added the new report/scheduled report.') on item 'LoginTestRail.SuccessfullyAddedTheNewTestCase'.", repo.LoginTestRail.SuccessfullyAddedTheNewTestCaseInfo, new RecordItemIndex(6));
+                Validate.Attribute(repo.LoginTestRail.SuccessfullyAddedTheNewTestCaseInfo, "InnerText", "Successfully added the new report/scheduled report.", Validate.DefaultMessage, false);
+                Delay.Milliseconds(100);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(6)); }
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LoginTestRail.ATagReturnToDashboard' at 110;10.", repo.LoginTestRail.ATagReturnToDashboardInfo, new RecordItemIndex(7));
             repo.LoginTestRail.ATagReturnToDashboard.Click("110;10");

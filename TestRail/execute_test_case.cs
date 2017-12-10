@@ -79,52 +79,53 @@ namespace TestRail
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LoginTestRail.TestRuns' at 31;8.", repo.LoginTestRail.TestRunsInfo, new RecordItemIndex(0));
-            repo.LoginTestRail.TestRuns.Click("31;8");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click at {X=0,Y=0}.", new RecordItemIndex(0));
+            Mouse.MoveTo(0, 0);
+            Mouse.Click(System.Windows.Forms.MouseButtons.Left);
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LoginTestRail.TestRun021220171' at 15;12.", repo.LoginTestRail.TestRun021220171Info, new RecordItemIndex(1));
-            repo.LoginTestRail.TestRun021220171.Click("15;12");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LoginTestRail.TestRail1' at 11;1.", repo.LoginTestRail.TestRail1Info, new RecordItemIndex(1));
+            repo.LoginTestRail.TestRail1.Click("11;1");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LoginTestRail.Selected9240' at 53;10.", repo.LoginTestRail.Selected9240Info, new RecordItemIndex(2));
-            repo.LoginTestRail.Selected9240.Click("53;10");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LoginTestRail.TestRunsResults' at 94;14.", repo.LoginTestRail.TestRunsResultsInfo, new RecordItemIndex(2));
+            repo.LoginTestRail.TestRunsResults.Click("94;14");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LoginTestRail.Sidebar1.AddResult' at 34;8.", repo.LoginTestRail.Sidebar1.AddResultInfo, new RecordItemIndex(3));
-            repo.LoginTestRail.Sidebar1.AddResult.Click("34;8");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LoginTestRail.ATestRun' at 27;3.", repo.LoginTestRail.ATestRunInfo, new RecordItemIndex(3));
+            repo.LoginTestRail.ATestRun.Click("27;3");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LoginTestRail.AddResultStatus' at 273;12.", repo.LoginTestRail.AddResultStatusInfo, new RecordItemIndex(4));
-            repo.LoginTestRail.AddResultStatus.Click("273;12");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LoginTestRail.AnExecutableTestCase' at 85;6.", repo.LoginTestRail.AnExecutableTestCaseInfo, new RecordItemIndex(4));
+            repo.LoginTestRail.AnExecutableTestCase.Click("85;6");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LoginTestRail.AddResultComment' at 190;3.", repo.LoginTestRail.AddResultCommentInfo, new RecordItemIndex(5));
-            repo.LoginTestRail.AddResultComment.Click("190;3");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LoginTestRail.Sidebar1.AddResult' at 32;3.", repo.LoginTestRail.Sidebar1.AddResultInfo, new RecordItemIndex(5));
+            repo.LoginTestRail.Sidebar1.AddResult.Click("32;3");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LoginTestRail.AddResultComment' at 106;53.", repo.LoginTestRail.AddResultCommentInfo, new RecordItemIndex(6));
-            repo.LoginTestRail.AddResultComment.Click("106;53");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LoginTestRail.AddResultStatus' at 78;20.", repo.LoginTestRail.AddResultStatusInfo, new RecordItemIndex(6));
+            repo.LoginTestRail.AddResultStatus.Click("78;20");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'comment' with focus on 'LoginTestRail.AddResultComment'.", repo.LoginTestRail.AddResultCommentInfo, new RecordItemIndex(7));
-            repo.LoginTestRail.AddResultComment.PressKeys("comment");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LoginTestRail.AddResult1' at 17;6.", repo.LoginTestRail.AddResult1Info, new RecordItemIndex(8));
-            repo.LoginTestRail.AddResult1.Click("17;6");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LoginTestRail.ColumnResultDialogColumnLeft1.SetTheTestStatusEtc' at 83;4.", repo.LoginTestRail.ColumnResultDialogColumnLeft1.SetTheTestStatusEtcInfo, new RecordItemIndex(7));
+            repo.LoginTestRail.ColumnResultDialogColumnLeft1.SetTheTestStatusEtc.Click("83;4");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LoginTestRail.TestRun021220171' at 78;2.", repo.LoginTestRail.TestRun021220171Info, new RecordItemIndex(9));
-            repo.LoginTestRail.TestRun021220171.Click("78;2");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LoginTestRail.AddResultStatus' at 300;14.", repo.LoginTestRail.AddResultStatusInfo, new RecordItemIndex(8));
+            repo.LoginTestRail.AddResultStatus.Click("300;14");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Failed') on item 'LoginTestRail.Failed1'.", repo.LoginTestRail.Failed1Info, new RecordItemIndex(10));
-            Validate.Attribute(repo.LoginTestRail.Failed1Info, "InnerText", "Failed");
-            Delay.Milliseconds(100);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LoginTestRail.AddResultStatus' at 75;17.", repo.LoginTestRail.AddResultStatusInfo, new RecordItemIndex(9));
+            repo.LoginTestRail.AddResultStatus.Click("75;17");
+            Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LoginTestRail.ATagReturnToDashboard' at 75;7.", repo.LoginTestRail.ATagReturnToDashboardInfo, new RecordItemIndex(11));
-            repo.LoginTestRail.ATagReturnToDashboard.Click("75;7");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LoginTestRail.ColumnResultDialogColumnLeft1.SetTheTestStatusEtc' at 68;2.", repo.LoginTestRail.ColumnResultDialogColumnLeft1.SetTheTestStatusEtcInfo, new RecordItemIndex(10));
+            repo.LoginTestRail.ColumnResultDialogColumnLeft1.SetTheTestStatusEtc.Click("68;2");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LoginTestRail.AddResult1' at 9;9.", repo.LoginTestRail.AddResult1Info, new RecordItemIndex(11));
+            repo.LoginTestRail.AddResult1.Click("9;9");
             Delay.Milliseconds(200);
             
         }

@@ -157,9 +157,11 @@ namespace TestRail
             repo.LoginTestRail.ButtonTagAddUser.Click("34;14");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Successfully added the new user.') on item 'LoginTestRail.SuccessfullyAddedTheNewTestCase'.", repo.LoginTestRail.SuccessfullyAddedTheNewTestCaseInfo, new RecordItemIndex(13));
-            Validate.Attribute(repo.LoginTestRail.SuccessfullyAddedTheNewTestCaseInfo, "InnerText", "Successfully added the new user.");
-            Delay.Milliseconds(100);
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Successfully added the new user.') on item 'LoginTestRail.SuccessfullyAddedTheNewTestCase'.", repo.LoginTestRail.SuccessfullyAddedTheNewTestCaseInfo, new RecordItemIndex(13));
+                Validate.Attribute(repo.LoginTestRail.SuccessfullyAddedTheNewTestCaseInfo, "InnerText", "Successfully added the new user.", Validate.DefaultMessage, false);
+                Delay.Milliseconds(100);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(13)); }
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LoginTestRail.Dashboard' at 61;11.", repo.LoginTestRail.DashboardInfo, new RecordItemIndex(14));
             repo.LoginTestRail.Dashboard.Click("61;11");

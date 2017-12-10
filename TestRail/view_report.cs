@@ -91,9 +91,11 @@ namespace TestRail
             repo.LoginTestRail.ActivitySummaryCases02122017.Click("146;7");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tView Report\t\t\t\t\t') on item 'LoginTestRail.DivTagViewR'.", repo.LoginTestRail.DivTagViewRInfo, new RecordItemIndex(3));
-            Validate.Attribute(repo.LoginTestRail.DivTagViewRInfo, "InnerText", "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tView Report\t\t\t\t\t");
-            Delay.Milliseconds(100);
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tView Report\t\t\t\t\t') on item 'LoginTestRail.DivTagViewR'.", repo.LoginTestRail.DivTagViewRInfo, new RecordItemIndex(3));
+                Validate.Attribute(repo.LoginTestRail.DivTagViewRInfo, "InnerText", "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tView Report\t\t\t\t\t", Validate.DefaultMessage, false);
+                Delay.Milliseconds(100);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LoginTestRail.ATagReturnToDashboard' at 110;2.", repo.LoginTestRail.ATagReturnToDashboardInfo, new RecordItemIndex(4));
             repo.LoginTestRail.ATagReturnToDashboard.Click("110;2");

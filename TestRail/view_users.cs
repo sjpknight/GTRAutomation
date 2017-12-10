@@ -87,9 +87,11 @@ namespace TestRail
             repo.LoginTestRail.ViewUsersRoles.Click("40;4");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUsers & Roles\t\t\t\t\t') on item 'LoginTestRail.DivTagAllPr'.", repo.LoginTestRail.DivTagAllPrInfo, new RecordItemIndex(2));
-            Validate.Attribute(repo.LoginTestRail.DivTagAllPrInfo, "InnerText", "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUsers & Roles\t\t\t\t\t");
-            Delay.Milliseconds(100);
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUsers & Roles\t\t\t\t\t') on item 'LoginTestRail.DivTagAllPr'.", repo.LoginTestRail.DivTagAllPrInfo, new RecordItemIndex(2));
+                Validate.Attribute(repo.LoginTestRail.DivTagAllPrInfo, "InnerText", "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUsers & Roles\t\t\t\t\t", Validate.DefaultMessage, false);
+                Delay.Milliseconds(100);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LoginTestRail.Dashboard' at 55;16.", repo.LoginTestRail.DashboardInfo, new RecordItemIndex(3));
             repo.LoginTestRail.Dashboard.Click("55;16");

@@ -68,6 +68,42 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="edit_group.cs">
+      <BoundTo>a50c6994-cd97-4fe2-89db-1c6d213dda01</BoundTo>
+      <DependentUpon>edit_group.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6cbb5935-0322-432b-abf0-73fb71146010</id>
+    </Compile>
+    <Compile Include="edit_group.UserCode.cs">
+      <BoundTo>a50c6994-cd97-4fe2-89db-1c6d213dda01</BoundTo>
+      <DependentUpon>edit_group.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>54635054-1d9b-45f9-b5b2-074c57a1b5a2</id>
+    </Compile>
+    <Compile Include="edit_role.cs">
+      <BoundTo>0f04a742-08ca-4563-a246-8f5a6420d3b5</BoundTo>
+      <DependentUpon>edit_role.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a072ba88-2bda-48bd-aaaa-778d2ba56677</id>
+    </Compile>
+    <Compile Include="edit_role.UserCode.cs">
+      <BoundTo>0f04a742-08ca-4563-a246-8f5a6420d3b5</BoundTo>
+      <DependentUpon>edit_role.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>591fd465-c499-46db-b301-5f47c388e66e</id>
+    </Compile>
+    <Compile Include="add_new_role.cs">
+      <BoundTo>ceb39daa-b6d7-4646-87ae-c7db451a3e4b</BoundTo>
+      <DependentUpon>add_new_role.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d5ba4052-0dea-4035-8a54-7e047e2e5a68</id>
+    </Compile>
+    <Compile Include="add_new_role.UserCode.cs">
+      <BoundTo>ceb39daa-b6d7-4646-87ae-c7db451a3e4b</BoundTo>
+      <DependentUpon>add_new_role.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>797d8105-a254-47ac-8b95-795debc45a7d</id>
+    </Compile>
     <Compile Include="add_new_user.cs">
       <BoundTo>9cdb35a4-ece9-4e2f-be88-935dc7441891</BoundTo>
       <DependentUpon>add_new_user.rxrec</DependentUpon>
@@ -94,6 +130,18 @@
       <DependentUpon>closebrowser.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>7b50f7e9-e372-44f6-8a09-924e36a73b19</id>
+    </Compile>
+    <Compile Include="edit_user.cs">
+      <BoundTo>dedc2e47-bcfc-4512-96bd-dc1e6e907664</BoundTo>
+      <DependentUpon>edit_user.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7e62811d-feab-41d8-a595-5d6854ec8500</id>
+    </Compile>
+    <Compile Include="edit_user.UserCode.cs">
+      <BoundTo>dedc2e47-bcfc-4512-96bd-dc1e6e907664</BoundTo>
+      <DependentUpon>edit_user.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>31fa5261-33cb-4e8c-9fdf-fc2dde4ea8c5</id>
     </Compile>
     <Compile Include="login.cs">
       <BoundTo>6c4eeb7e-8efc-464e-9fb3-69631163efbb</BoundTo>
@@ -164,6 +212,18 @@
       <UserCode>true</UserCode>
       <id>ce3781a5-2171-45a4-bf8a-03c9e423b7ae</id>
     </Compile>
+    <Compile Include="add_new_group.cs">
+      <BoundTo>2f0c86cb-8290-4d9d-a94f-d89aa2a0b458</BoundTo>
+      <DependentUpon>add_new_group.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>41ba38cb-663f-417f-8b5b-da8236c717c4</id>
+    </Compile>
+    <Compile Include="add_new_group.UserCode.cs">
+      <BoundTo>2f0c86cb-8290-4d9d-a94f-d89aa2a0b458</BoundTo>
+      <DependentUpon>add_new_group.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6936e4c6-1e8d-496b-bb57-78f8637cd08b</id>
+    </Compile>
     <Compile Include="Recording2.cs">
       <BoundTo>7a5cf974-56d1-4321-9bc7-f02ce0c5f24a</BoundTo>
       <DependentUpon>Recording2.rxrec</DependentUpon>
@@ -232,6 +292,21 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="edit_group.rxrec">
+      <BoundTo>d2782510-1e08-4d7d-b169-b07cfd40a86a</BoundTo>
+      <id>a50c6994-cd97-4fe2-89db-1c6d213dda01</id>
+      <recordtableid>048ad6db-b9dc-4d65-9934-755f487ea645</recordtableid>
+    </None>
+    <None Include="edit_role.rxrec">
+      <BoundTo>d2782510-1e08-4d7d-b169-b07cfd40a86a</BoundTo>
+      <id>0f04a742-08ca-4563-a246-8f5a6420d3b5</id>
+      <recordtableid>7757b365-574e-45e6-800c-2120372fface</recordtableid>
+    </None>
+    <None Include="add_new_role.rxrec">
+      <BoundTo>d2782510-1e08-4d7d-b169-b07cfd40a86a</BoundTo>
+      <id>ceb39daa-b6d7-4646-87ae-c7db451a3e4b</id>
+      <recordtableid>bc78495f-be32-4d8c-912b-62a00825436f</recordtableid>
+    </None>
     <None Include="add_new_user.rxrec">
       <BoundTo>d2782510-1e08-4d7d-b169-b07cfd40a86a</BoundTo>
       <id>9cdb35a4-ece9-4e2f-be88-935dc7441891</id>
@@ -244,6 +319,11 @@
       <BoundTo>d2782510-1e08-4d7d-b169-b07cfd40a86a</BoundTo>
       <id>73994637-366b-4061-b987-c9ba06babd1c</id>
       <recordtableid>d82fa8e7-07e1-40ba-a98b-24abcadd505c</recordtableid>
+    </None>
+    <None Include="edit_user.rxrec">
+      <BoundTo>d2782510-1e08-4d7d-b169-b07cfd40a86a</BoundTo>
+      <id>dedc2e47-bcfc-4512-96bd-dc1e6e907664</id>
+      <recordtableid>39b0cc4c-1bbd-4f59-b53b-34378ea90ba0</recordtableid>
     </None>
     <None Include="login.rxrec">
       <BoundTo>d2782510-1e08-4d7d-b169-b07cfd40a86a</BoundTo>
@@ -269,6 +349,11 @@
       <BoundTo>d2782510-1e08-4d7d-b169-b07cfd40a86a</BoundTo>
       <id>1a540bcd-75dc-4cf9-8a1f-7d8795aa7bbd</id>
       <recordtableid>26b9bac8-72ae-4129-8a7b-e3a2cf53071d</recordtableid>
+    </None>
+    <None Include="add_new_group.rxrec">
+      <BoundTo>d2782510-1e08-4d7d-b169-b07cfd40a86a</BoundTo>
+      <id>2f0c86cb-8290-4d9d-a94f-d89aa2a0b458</id>
+      <recordtableid>a1465a95-d996-4688-b36e-3dbc8fbac6e6</recordtableid>
     </None>
     <None Include="Recording2.rxrec">
       <BoundTo>d2782510-1e08-4d7d-b169-b07cfd40a86a</BoundTo>

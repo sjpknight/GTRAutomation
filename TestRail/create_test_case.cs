@@ -135,9 +135,11 @@ namespace TestRail
             repo.LoginTestRail.ATagReturnToDashboard.Click("104;3");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAll Projects\t\t\t\t\t') on item 'LoginTestRail.DivTagAllPr'.", repo.LoginTestRail.DivTagAllPrInfo, new RecordItemIndex(14));
-            Validate.Attribute(repo.LoginTestRail.DivTagAllPrInfo, "InnerText", "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAll Projects\t\t\t\t\t");
-            Delay.Milliseconds(100);
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAll Projects\t\t\t\t\t') on item 'LoginTestRail.DivTagAllPr'.", repo.LoginTestRail.DivTagAllPrInfo, new RecordItemIndex(14));
+                Validate.Attribute(repo.LoginTestRail.DivTagAllPrInfo, "InnerText", "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAll Projects\t\t\t\t\t", Validate.DefaultMessage, false);
+                Delay.Milliseconds(100);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(14)); }
             
         }
 

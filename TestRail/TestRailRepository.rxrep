@@ -19,7 +19,7 @@ rxversion="7.2">
 		id="d401b231-f485-49a4-9b9c-61f6566282ef"
 		isrooted="True"
 		name="LoginTestRail"
-		refimgid="ee0c41c6-165c-4e09-b1f8-babdc1a5b82d"
+		refimgid="2d3a2215-abc3-4027-b7b3-9cfa9897b242"
 		refpath="/dom[@domain='localhost:8080']"
 		searchtimeout="30000ms"
 		usecache="False">
@@ -29,7 +29,6 @@ rxversion="7.2">
 			id="4efe891f-04a8-4be6-b254-3abf49d68707"
 			name="Name"
 			refimgid="2ee5822f-2b06-4bfa-9cb8-8d3130b923b3"
-			refpath="/dom[@domain='localhost:8080']//input[#'name']"
 			searchtimeout="30000ms">
 				/dom[@domain='localhost:8080']//input[#'name']
 			</item>
@@ -49,9 +48,8 @@ rxversion="7.2">
 			id="c210eb26-aaaa-4e83-8604-3f7172a3d0c7"
 			name="ButtonTagLogIn"
 			refimgid="1d462ba2-0178-4611-b2fd-c0b9c825297b"
-			refpath="/dom[@domain='localhost:8080']//div[#'content']/form/div[4]/button[@innertext='Log in']"
 			searchtimeout="30000ms">
-				/dom[@domain='localhost:8080']//div[#'content']/form[@action='http://localhost:8080/testrail/index.php?/auth/login/']/?/?/button[@innertext='Log in']
+				/dom[@domain='localhost:8080']//div[1]/form[@action='http://localhost:8080/testrail/index.php?/auth/login/']/?/?/button[@innertext='Log in']
 			</item>
 			<item
 			addcaps="unknown,webelement,atag"
@@ -290,6 +288,16 @@ rxversion="7.2">
 				searchtimeout="30000ms">
 					/dom[@domain='localhost:8080']//div[#'sidebar']
 				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="ecd98c72-3724-4a67-95fa-1ae7bd95392b"
+				name="UsersRoles"
+				refimgid="2f5b632b-b038-44d1-9fdf-a3597ea9bbd9"
+				refpath="/dom[@domain='localhost:8080']//div[#'sidebar']/ul/li[3]/a[@innertext='Users &amp; Roles']"
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:8080']//div[#'sidebar']//a[@innertext='Users &amp; Roles']
+				</item>
 				<basepath>
 					/dom[@domain='localhost:8080']//div[#'sidebar']
 				</basepath>
@@ -351,7 +359,7 @@ rxversion="7.2">
 			name="TestRun021220171"
 			refimgid="2b3c6584-951f-4ddb-aa75-a82cae28ee5e"
 			searchtimeout="30000ms">
-				/dom[@domain='localhost:8080']//div[1]//a[@innertext='Test Run 02/12/2017']
+				/dom[@domain='localhost:8080']//div[#'content']/?/?/a[@innertext='Test Run 04/12/2017' and @href='http://localhost:8080/testrail/index.php?/runs/view/3']
 			</item>
 			<item
 			addcaps="unknown,webelement,inputtag"
@@ -360,7 +368,7 @@ rxversion="7.2">
 			name="Selected9240"
 			refimgid="0be05524-2ebd-4cd4-a2ca-72a17ef9669f"
 			searchtimeout="30000ms">
-				/dom[@domain='localhost:8080']//table[#'grid-1']/tbody/tr[2]/?/?/a[@innertext='ranorex testcase']
+				/dom[@domain='localhost:8080']//table[1]/tbody/tr[2]/?/?/a[@innertext='ranorex testcase']
 			</item>
 			<item
 			addcaps="unknown,webelement,atag"
@@ -511,6 +519,319 @@ rxversion="7.2">
 			searchtimeout="30000ms">
 				/dom[@domain='localhost:8080']//form[#'form']/?/?/button[@innertext='Add User']
 			</item>
+			<folder
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="ceb6b897-3da4-4aef-8982-476320fbe484"
+			isrooted="True"
+			name="Run3"
+			refpath="/dom[@domain='localhost:8080']//div[#'run-3']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="6de245c2-abda-4301-bc63-d4ccaea09606"
+				name="TestRun04122017"
+				refimgid="f500e32e-4e69-48b5-bd20-9a9ad0cfcb75"
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:8080']//div[#'run-3']//a[1]
+				</item>
+				<basepath>
+					/dom[@domain='localhost:8080']//div[#'run-3']
+				</basepath>
+			</folder>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="d265dac6-21b0-4bcc-80b3-e859386a3de1"
+			name="TestCase"
+			refimgid="38460bce-6b8c-4af8-a1ae-581d9a4875a7"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost:8080']//table[#'grid-1']/tbody/tr[2]/td[3]/a[@innertext&gt;'ranorex testcase']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="unknown"
+			id="ef45120e-8f17-4dcd-8296-f7a8557a08d8"
+			name="TestCase1"
+			refimgid="50a6296d-016c-49f7-ac2f-14314b5dc684"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost:8080']//table[#'grid-1']/tbody/tr[2]/td[2]/?
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="e5710f9a-0c6f-46c5-9913-af83dd14545b"
+			name="ATagAddRole"
+			refimgid="ab9e32a8-b997-4579-9bab-3838907946e9"
+			refpath="/dom[@domain='localhost:8080']//div[#'content-inner']/div[6]/a[@innertext='Add Role']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost:8080']//div[#'content-inner']/?/?/a[@innertext='Add Role']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="7caaae22-3bb4-47df-b9bf-703eb175c2a2"
+			name="ButtonTagAddRole"
+			refimgid="230ec128-eb93-4f8e-86cd-04fefc884fd6"
+			refpath="/dom[@domain='localhost:8080']//form[#'form']/div[4]/button[@innertext='Add Role']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost:8080']//form[#'form']/?/?/button[@innertext='Add Role']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="8062df51-f55c-4608-8f88-cbbd8fa34b7a"
+			name="ATagAddGroup"
+			refimgid="64b0cfae-8ba0-4c37-a3c0-90e74f6ccdf0"
+			refpath="/dom[@domain='localhost:8080']//div[#'content-inner']/div[5]/a[@innertext='Add Group']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost:8080']//div[#'content-inner']/?/?/a[@innertext='Add Group']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="f4422989-8811-4042-85f4-1c975b886753"
+			name="ButtonTagAddGroup"
+			refimgid="e3d9c4d3-948c-4c77-abf9-2112d29ef3a5"
+			refpath="/dom[@domain='localhost:8080']//form[#'form']/div[3]/button[@innertext='Add Group']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost:8080']//form[#'form']/?/?/button[@innertext='Add Group']
+			</item>
+			<item
+			addcaps="unknown,webelement,imgtag"
+			capname="imgtag"
+			id="d6abf742-dfa8-4bc2-90c7-94ec94147bf5"
+			name="HttpLocalhost8080TestrailImagesIc"
+			refimgid="d216953a-be2d-4477-9826-304635d95f5d"
+			refpath="/dom[@domain='localhost:8080' and @caption='Users &amp; Roles - TestRail']//div[#'content-inner']/table[1]/tbody/tr[2]/td[5]/a/img[@alt='']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost:8080']//div[#'content-inner']/table[1]/tbody/tr[2]//img[@alt='']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="4509b91e-e5df-4ca3-beb9-27b984389e80"
+			name="ButtonTagSaveUser"
+			refimgid="219933ca-ac83-4ef1-a719-f38e4fbffdca"
+			refpath="/dom[@domain='localhost:8080' and @caption='Edit User - TestRail']//form[#'form']/div[2]/button[@innertext='Save User']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost:8080']//form[#'form']/?/?/button[@innertext='Save User']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="5195d515-22ce-4499-ae5c-7d6be0264836"
+			name="SuccessfullyUpdatedTheUser"
+			refimgid="2a68e9a4-ce79-4a80-a66c-422fac5dbc7e"
+			refpath="/dom[@domain='localhost:8080' and @caption='Users &amp; Roles - TestRail']//div[#'content-inner']/div[@innertext='Successfully updated the user.']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost:8080']//div[#'content-inner']/div[@innertext~'^Successfully\ updated\ the\ ']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="859491e8-b64a-46be-b9f3-74cf28276a17"
+			name="AnEditableGroup"
+			refimgid="e8dfc3af-3486-4a7a-bf7c-d28174ad817c"
+			refpath="/dom[@domain='localhost:8080' and @caption='Users &amp; Roles - TestRail']//tr[#'group-4']/td[1]/a/span[@innertext='AnEditableGroup']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost:8080']//tr[#'group-4']//span[@innertext='AnEditableGroup']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="b749c91d-3f2c-4ec4-8397-3c42fce0fb62"
+			name="UserIds1004"
+			refimgid="bc2d6023-44ae-4936-9d44-be92ab463326"
+			refpath="/dom[@domain='localhost:8080' and @caption='Edit Group - TestRail']//input[#'user_ids-1004']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost:8080']//input[#'user_ids-1004']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="741985d1-411f-4cf3-b22c-8b61bf188cac"
+			name="ButtonTagSaveGroup"
+			refimgid="8643c65b-6e00-48db-b5fe-5fd2f9171ac2"
+			refpath="/dom[@domain='localhost:8080' and @caption='Edit Group - TestRail']//form[#'form']/div[3]/button[@innertext='Save Group']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost:8080']//form[#'form']/?/?/button[@innertext='Save Group']
+			</item>
+			<item
+			addcaps="unknown,webelement,imgtag"
+			capname="imgtag"
+			id="bc70385c-4962-4523-b149-2c38e17d235e"
+			name="HttpLocalhost8080TestrailImagesIc1"
+			refimgid="fb406dcb-9b3c-4725-a6ab-cf0b30ed8e0f"
+			refpath="/dom[@domain='localhost:8080' and @caption='Users &amp; Roles - TestRail']//tr[#'role-8']/td[2]/a/img[@alt='']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost:8080']//tr[#'role-8']//img[@alt='']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="421e13a3-fecb-4b34-995e-22458847da5e"
+			name="AttachmentsAddedit"
+			refimgid="ad4bd66b-cd0d-4961-ae21-8f9042701f04"
+			refpath="/dom[@domain='localhost:8080' and @caption='Edit Role - TestRail']//input[#'attachments_addedit']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost:8080']//input[#'attachments_addedit']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="489a3d4b-c659-41bc-b306-8e3d59824c29"
+			name="ButtonTagSaveRole"
+			refimgid="490d323b-3dae-4f3a-a238-2576e4fb6314"
+			refpath="/dom[@domain='localhost:8080' and @caption='Edit Role - TestRail']//form[#'form']/div[4]/button[@innertext='Save Role']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost:8080']//form[#'form']/?/?/button[@innertext='Save Role']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="a0fa6ecb-4715-4c58-abf8-3ed881bfe835"
+			name="AnEditableUser"
+			refimgid="73c1dc7f-3177-4b13-902a-e4124e21a777"
+			refpath="/dom[@domain='localhost:8080']//div[#'content-inner']/table[1]/tbody/tr[2]/td[1]/a/span[@innertext='AnEditableUser']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost:8080']//div[#'content-inner']/table[1]/tbody/tr[2]//span[@innertext='AnEditableUser']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="3f057096-1eec-4e84-baad-4bd67efdf094"
+			name="AnEditableRole"
+			refimgid="ee32abac-bda8-433c-9083-55653e97ddac"
+			refpath="/dom[@domain='localhost:8080']//tr[#'role-5']/td[1]/a/span[@innertext='AnEditableRole']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost:8080']//tr[#'role-5']//span[@innertext='AnEditableRole']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="38f03bae-d020-4b0c-9777-f9604cebbb06"
+			name="AnEditableGroup1"
+			refimgid="bb8c23c4-d202-47ff-b3d0-811b50569b43"
+			refpath="/dom[@domain='localhost:8080']//tr[#'group-1']/td[1]/a/span[@innertext='AnEditableGroup']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost:8080']//tr[#'group-1']//span[@innertext='AnEditableGroup']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="c4c6810e-956c-47a5-b1f1-dc780ce1d558"
+			name="UserIds1001"
+			refimgid="83a3e51b-12e4-49f9-a838-ad076b830e00"
+			refpath="/dom[@domain='localhost:8080']//input[#'user_ids-1001']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost:8080']//input[#'user_ids-1001']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="3be7cec1-8daa-40c5-a35c-611e6dc41e28"
+			name="ATestRun"
+			refimgid="0f301b59-edbc-4751-82a8-f710e5ec4ac1"
+			refpath="/dom[@domain='localhost:8080']//div[#'run-1']/div[2]/div[1]/a[@innertext='a test run']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost:8080']//div[#'run-1']//a[@innertext='a test run']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="344ac8d2-6af1-42db-8bd3-660eb1757819"
+			name="AnExecutableTestCase"
+			refimgid="74538611-2be5-4636-9fe4-7e20b008890d"
+			refpath="/dom[@domain='localhost:8080']//tr[#'row-416']/td[3]/a[@innertext='an executable test case']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost:8080']//tr[#'row-416']/?/?/a[@innertext='an executable test case']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="7aad8fee-3019-47f5-a583-a9e6b9163844"
+			name="Retest"
+			refimgid="f002598a-710a-4f46-9f04-6a5fc8a2e9ee"
+			refpath="/dom[@domain='localhost:8080']//tr[#'row-416']/td[5]/a[@innertext='Retest']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost:8080']//tr[#'row-416']/?/?/a[@innertext='Retest']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="614815aa-0dca-4542-9633-9c615d59e72c"
+			name="Passed1"
+			refimgid="04953cc7-9d17-4280-821c-6def548cc1d7"
+			refpath="/dom[@domain='localhost:8080']//div[#'statusDropdown']/ul/li[1]/a[@innertext='Passed']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost:8080']//div[#'statusDropdown']//a[@innertext='Passed']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="8b0c0016-74b6-4da4-a1b6-408782dca7af"
+			name="Selected416"
+			refimgid="d60b0f70-071c-4b09-ab77-4a079234d786"
+			refpath="/dom[@domain='localhost:8080']//tr[#'row-416']/td[1]/input[@name='selected-416']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost:8080']//tr[#'row-416']/?/?/input[@name='selected-416']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="cfb0682f-44b9-41db-8884-4b8d75c5e125"
+			name="AddResults"
+			refimgid="8c1cd2c6-f97c-425a-b9c3-1d166f2bebea"
+			refpath="/dom[@domain='localhost:8080']//a[#'massAddResult']/span[@innertext='Add Results']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost:8080']//a[#'massAddResult']/span[@innertext='Add Results']
+			</item>
+			<folder
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="1e274fad-f0a4-4228-82a4-ffd0666a2243"
+			isrooted="True"
+			name="ColumnResultDialogColumnLeft1"
+			refpath="/dom[@domain='localhost:8080']//form[#'addResultForm']/div/div[2]/div[2]/div[1]"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="112d7448-9860-4b73-bb3e-b663990a86f0"
+				name="ColumnResultDialogColumnLeft"
+				refimgid="b5773f83-72f9-49ad-b431-f4583570d787"
+				refpath="/dom[@domain='localhost:8080']//form[#'addResultForm']/div/div[2]/div[2]/div[1]"
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:8080']//form[#'addResultForm']/div/div[2]/div[2]/div[1]
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="23078f83-6efa-4fb4-a3d8-1793e3afa3a9"
+				name="SetTheTestStatusEtc"
+				refimgid="ab273bc5-0c43-462f-8543-50ec425695e4"
+				refpath="/dom[@domain='localhost:8080']//form[#'addResultForm']/div/div[2]/div[2]/div[1]/div[1]/div[@innertext~'^Set\ the\ test\ status\ \(,\ \ e']"
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:8080']//form[#'addResultForm']/div/div[2]/div[2]/div[1]/div[1]/div[@innertext~'^Set\ the\ test\ status\ \(,\ \ e']
+				</item>
+				<item
+				addcaps="unknown,webelement,labeltag"
+				capname="labeltag"
+				id="a3ad82dd-05f4-4017-9ac4-54be788f1f5d"
+				name="LabelTagComment"
+				refimgid="041480d2-e46d-4e16-96e1-6e7819ed2bde"
+				refpath="/dom[@domain='localhost:8080']//form[#'addResultForm']/div/div[2]/div[2]/div[1]/div[2]/label[@innertext='Comment']"
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:8080']//form[#'addResultForm']/div/div[2]/div[2]/div[1]/div[2]/label[@innertext='Comment']
+				</item>
+				<basepath>
+					/dom[@domain='localhost:8080']//form[#'addResultForm']/div/div[2]/div[2]/div[1]
+				</basepath>
+			</folder>
 			<basepath>
 				/dom[@domain='localhost:8080']
 			</basepath>

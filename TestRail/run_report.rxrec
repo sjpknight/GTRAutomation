@@ -918,7 +918,7 @@ AI5/9el/sP8A6ef/ABz/AOvRRV8kSOeQf2H/ANPP/jn/ANeiiijkiHPI/9k=
 		action="AttributeEqual"
 		duration="100ms"
 		enabled="True"
-		optional="False"
+		optional="True"
 		searchpropertyid="32c6f41b-8ec8-4152-854a-ff82e58410c1">
 			<comment>
 			</comment>

@@ -9,6 +9,12 @@ rxversion="7.2">
 			ref="a377e8a0-2e8f-48c3-ac71-3154b2150f5d"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="15ab75ac-9469-4a40-bd84-28f3776bfcbe"
+			name="Add_new_group"
+			ref="a1465a95-d996-4688-b36e-3dbc8fbac6e6"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="1d60017f-4a9a-42a9-9dca-744247904491"
 			name="administrator_adds_new_user">
@@ -38,6 +44,18 @@ rxversion="7.2">
 				</parameters>
 			</testcase>
 			<testmodule
+			id="2b6c9fd5-be03-4a8d-9ff5-6ae17190ef50"
+			name="edit_user"
+			ref="39b0cc4c-1bbd-4f59-b53b-34378ea90ba0"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="2b714ec1-e7db-457b-9219-ad4a8e6c102a"
+			name="Edit_role"
+			ref="7757b365-574e-45e6-800c-2120372fface"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="32c5559c-8ec2-449c-b47f-1578f3d3b7ab"
 			name="view_report"
 			ref="039ab76c-9c5f-46c5-8849-228579257df3"
@@ -46,6 +64,10 @@ rxversion="7.2">
 			<testcase
 			id="3abf7725-fa80-46fe-818a-6970283d5ce7"
 			name="setup">
+			</testcase>
+			<testcase
+			id="46e8585d-64bc-47ae-a0f7-be4ea0a59c1e"
+			name="administrator_edits_role">
 			</testcase>
 			<testmodule
 			id="4787aa47-a45f-443b-9684-a814fcd3e12b"
@@ -59,9 +81,19 @@ rxversion="7.2">
 			ref="ffd9da09-8fc5-468d-b918-433beedd73dd"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="525f1551-b8f2-41b3-a315-ef7012cc26dd"
+			name="openbrowser"
+			ref="26b9bac8-72ae-4129-8a7b-e3a2cf53071d"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="70f5b6e4-74c1-4267-9a6b-723ed6d11b06"
 			name="administrator_views_users">
+			</testcase>
+			<testcase
+			id="73578491-c2c8-4185-8070-821fe2d5fb5d"
+			name="administrator_adds_new_group">
 			</testcase>
 			<testmodule
 			id="844b9b79-01e9-4f78-9177-9c1e220eb9ef"
@@ -97,6 +129,16 @@ rxversion="7.2">
 			id="89971673-91b1-4db2-97ea-097da65a85c9"
 			name="tester_create_test_case">
 			</testcase>
+			<testcase
+			id="926054bc-a5c6-42c4-87ce-8f5779897da6"
+			name="administrator_adds_new_role">
+			</testcase>
+			<testmodule
+			id="a7479c0d-a3c8-4a62-afbc-5b053932c4f6"
+			name="edit_group"
+			ref="048ad6db-b9dc-4d65-9934-755f487ea645"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="afd8e52b-3a24-4eb4-8375-760a88867cd5"
 			name="add_new_user"
@@ -117,13 +159,27 @@ rxversion="7.2">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="bd801d80-1509-4d18-bcb0-4ea86b0e24d7"
+			name="add_new_role"
+			ref="bc78495f-be32-4d8c-912b-62a00825436f"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="c2346d33-650c-44de-afba-b13a1d9fc6c8"
-			name="tester_execute_test">
+			name="tester_execute_test_WIP-do-not-execute">
 			</testcase>
 			<testcase
 			id="c6d0c5f5-31fd-45bc-9d2b-7f8f913b0b8e"
 			name="test_manager_view_report">
+			</testcase>
+			<testcase
+			id="ca1a50b0-2aa6-4c17-ac89-a83f4ae8e366"
+			name="administrator_edits_user">
+			</testcase>
+			<testcase
+			id="cca8fe08-a086-47ad-8975-9084484c785c"
+			name="administrator_edits_group">
 			</testcase>
 			<testmodule
 			id="cd8cb494-d60a-4f3f-a14a-9d36d9fbe53c"
@@ -161,12 +217,6 @@ rxversion="7.2">
 			ref="d82fa8e7-07e1-40ba-a98b-24abcadd505c"
 			type="Recording">
 			</testmodule>
-			<testmodule
-			id="f6a7c8c2-c905-4e4b-b850-585e0f9f6d18"
-			name="openbrowser"
-			ref="26b9bac8-72ae-4129-8a7b-e3a2cf53071d"
-			type="Recording">
-			</testmodule>
 			<testcase
 			id="fa6b0e08-12a8-4f47-a8a3-c97591016c94"
 			name="TestRail"
@@ -200,7 +250,7 @@ rxversion="7.2">
 					id="3abf7725-fa80-46fe-818a-6970283d5ce7"
 					name="setup">
 						<testmodule
-						id="f6a7c8c2-c905-4e4b-b850-585e0f9f6d18"
+						id="525f1551-b8f2-41b3-a315-ef7012cc26dd"
 						name="openbrowser">
 						</testmodule>
 						<testmodule
@@ -226,7 +276,7 @@ rxversion="7.2">
 					</testcase>
 					<testcase
 					id="c2346d33-650c-44de-afba-b13a1d9fc6c8"
-					name="tester_execute_test">
+					name="tester_execute_test_WIP-do-not-execute">
 						<testmodule
 						id="844b9b79-01e9-4f78-9177-9c1e220eb9ef"
 						name="Execute_test_case">
@@ -269,6 +319,46 @@ rxversion="7.2">
 						</testmodule>
 					</testcase>
 					<testcase
+					id="73578491-c2c8-4185-8070-821fe2d5fb5d"
+					name="administrator_adds_new_group">
+						<testmodule
+						id="15ab75ac-9469-4a40-bd84-28f3776bfcbe"
+						name="Add_new_group">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="926054bc-a5c6-42c4-87ce-8f5779897da6"
+					name="administrator_adds_new_role">
+						<testmodule
+						id="bd801d80-1509-4d18-bcb0-4ea86b0e24d7"
+						name="add_new_role">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="ca1a50b0-2aa6-4c17-ac89-a83f4ae8e366"
+					name="administrator_edits_user">
+						<testmodule
+						id="2b6c9fd5-be03-4a8d-9ff5-6ae17190ef50"
+						name="edit_user">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="cca8fe08-a086-47ad-8975-9084484c785c"
+					name="administrator_edits_group">
+						<testmodule
+						id="a7479c0d-a3c8-4a62-afbc-5b053932c4f6"
+						name="edit_group">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="46e8585d-64bc-47ae-a0f7-be4ea0a59c1e"
+					name="administrator_edits_role">
+						<testmodule
+						id="2b714ec1-e7db-457b-9219-ad4a8e6c102a"
+						name="Edit_role">
+						</testmodule>
+					</testcase>
+					<testcase
 					id="868a113d-b030-4c86-a700-7cdd251fe896"
 					name="teardown">
 						<testmodule
@@ -300,7 +390,13 @@ rxversion="7.2">
 			id="3abf7725-fa80-46fe-818a-6970283d5ce7">
 			</testcontainer>
 			<testcontainer
+			id="46e8585d-64bc-47ae-a0f7-be4ea0a59c1e">
+			</testcontainer>
+			<testcontainer
 			id="70f5b6e4-74c1-4267-9a6b-723ed6d11b06">
+			</testcontainer>
+			<testcontainer
+			id="73578491-c2c8-4185-8070-821fe2d5fb5d">
 			</testcontainer>
 			<testcontainer
 			id="868a113d-b030-4c86-a700-7cdd251fe896">
@@ -309,10 +405,16 @@ rxversion="7.2">
 			id="89971673-91b1-4db2-97ea-097da65a85c9">
 			</testcontainer>
 			<testcontainer
-			id="c2346d33-650c-44de-afba-b13a1d9fc6c8">
+			id="926054bc-a5c6-42c4-87ce-8f5779897da6">
 			</testcontainer>
 			<testcontainer
 			id="c6d0c5f5-31fd-45bc-9d2b-7f8f913b0b8e">
+			</testcontainer>
+			<testcontainer
+			id="ca1a50b0-2aa6-4c17-ac89-a83f4ae8e366">
+			</testcontainer>
+			<testcontainer
+			id="cca8fe08-a086-47ad-8975-9084484c785c">
 			</testcontainer>
 			<testcontainer
 			id="f35a59ad-0550-4bdc-ba6e-a1ebdca09695">

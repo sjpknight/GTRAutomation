@@ -2414,7 +2414,7 @@ o/worS/sS2/vy/mP8KKvln3IvDsf/9k=
 		action="AttributeEqual"
 		duration="100ms"
 		enabled="True"
-		optional="False"
+		optional="True"
 		searchpropertyid="0ebb4e3c-d225-4f32-8ec9-8c7f61b324af">
 			<comment>
 			</comment>

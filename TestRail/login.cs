@@ -99,8 +99,8 @@ namespace TestRail
             repo.LoginTestRail.Password.PressKeys("testrail123");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LoginTestRail.ButtonTagLogIn' at 32;14.", repo.LoginTestRail.ButtonTagLogInInfo, new RecordItemIndex(5));
-            repo.LoginTestRail.ButtonTagLogIn.Click("32;14");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}'.", new RecordItemIndex(5));
+            Keyboard.Press("{Return}");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Automated Test') on item 'LoginTestRail.AutomatedTest'.", repo.LoginTestRail.AutomatedTestInfo, new RecordItemIndex(6));
